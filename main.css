@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(71, 65, 65, 0.7); 
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    z-index: 9999; 
+}
+
+nav .logo img {
+    width: 80px; 
+    height: auto;
+}
+
+nav .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container .start {
+    width: 20%; 
+}
+
+nav .container .end {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .container .navList ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .container .navList ul li {
+    margin: 0 20px; 
+}
+
+nav .container .navList ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    transition: color 0.4s ease; 
+}
+
+nav .container .navList ul li a:hover {
+    color: #d4ab84; 
+}
+
+.header {
+    background-image: url('image/shutterstock_277750193.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.head {
+    max-width: 80%;
+}
+
+.head h1 {
+    font-size: 60px; 
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+    margin-bottom: 20px;
+}
+
+.head p {
+    font-family: "Macondo", cursive;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.head img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons button {
+    padding: 15px 30px;
+    border: 2px solid #d4ab84;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #d4ab84;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #d4ab84; 
+    color: white; 
+    transition: background-color 0.4s ease;
+}
